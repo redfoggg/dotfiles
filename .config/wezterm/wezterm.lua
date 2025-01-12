@@ -7,20 +7,25 @@ local config = wezterm.config_builder()
 
 -- This is where you actually apply your config choices
 
-config.font_size = 12
+config.font_size = 15
 config.color_scheme = 'iTerm2 Default'
 
 config.leader = { key = 'b', mods = 'CTRL', timeout_milliseconds = 1000 }
 config.keys = {
     {
-        key = 's',
+        key = 'v',
         mods = 'LEADER',
         action = act.SplitHorizontal { domain = 'CurrentPaneDomain' },
     },
     {
-        key = 'v',
+        key = 's',
         mods = 'LEADER',
         action = act.SplitVertical { domain = 'CurrentPaneDomain' },
+    },
+    {
+        key = 'z',
+        mods = 'LEADER',
+        action = act.TogglePaneZoomState,
     },
     {
         key = 'd',

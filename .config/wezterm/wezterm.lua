@@ -7,7 +7,7 @@ local config = wezterm.config_builder()
 
 -- This is where you actually apply your config choices
 
-config.font_size = 15
+config.font_size = 12
 config.color_scheme = 'iTerm2 Default'
 
 config.leader = { key = 'b', mods = 'CTRL', timeout_milliseconds = 1000 }
